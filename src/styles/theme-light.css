@@ -1,0 +1,63 @@
+/* Light theme — derived from Nocturne by flipping ramp roles and re-grounding
+   the chrome tints on a paper-light base. The dark theme (bare :root) remains
+   the design's source of truth; this file only overrides tokens. */
+
+[data-theme='light'] {
+  --color-bg: #f4f5fa;
+  --color-surface: #ffffff;
+  --color-text: #23252f;
+  --color-accent: #6a5cc4;
+  --color-accent-2: #6f6aa8;
+  --color-divider: color-mix(in srgb, #23252f 14%, transparent);
+
+  /* Neutral ramp, role-flipped: N maps to dark theme's (1000 - N). */
+  --color-neutral-100: #292b31;
+  --color-neutral-200: #3f424d;
+  --color-neutral-300: #595d6c;
+  --color-neutral-400: #75798c;
+  --color-neutral-500: #82869b;
+  --color-neutral-600: #9ca0b4;
+  --color-neutral-700: #b2b6ca;
+  --color-neutral-800: #cfd3e5;
+  --color-neutral-900: #e4e7f5;
+
+  /* Accent ramp, role-flipped. */
+  --color-accent-100: #2b2741;
+  --color-accent-200: #423a6a;
+  --color-accent-300: #5d5294;
+  --color-accent-400: #796cbf;
+  --color-accent-500: #8073c9;
+  --color-accent-600: #968ae0;
+  --color-accent-700: #b5abfc;
+  --color-accent-800: #e0dcfd;
+  --color-accent-900: #efedfe;
+
+  --shadow-sm: 0 0 0 1px #d8dbe6;
+  --shadow-md: 0 0 0 1px #c8ccdb, 0 6px 18px rgba(35, 37, 60, 0.14);
+  --shadow-lg: 0 0 0 1px #b2b6ca, 0 16px 40px rgba(35, 37, 60, 0.2);
+
+  /* Chrome tints. */
+  --surface-page: #e8eaf1;
+  --surface-rail: #eff0f6;
+  --surface-band: #eaecf4;
+  --surface-header: #eef0f6;
+  --surface-item: #ffffff;
+  --surface-hunk: #e9ebf3;
+  --surface-input: #ffffff;
+  --surface-row-hover: #eaecf3;
+  --surface-titlebar: #eef0f7;
+  --surface-label: #e6e8f1;
+  --surface-thread-row: #eef0f6;
+  --surface-thread-header: #e9ebf4;
+  --surface-traffic: #c3c6d4;
+  --surface-empty-half: #e9ebf25c;
+
+  /* Diff colors — same hue family, darker ink for light ground. */
+  --diff-add-fill: rgba(76, 150, 105, 0.13);
+  --diff-add-edge: #4f9d6c;
+  --diff-add-number: #2e7d4f;
+  --diff-add-text: #1e4a30;
+  --diff-del-fill: rgba(150, 76, 88, 0.11);
+  --diff-del-edge: #9d4f5c;
+  --diff-del-number: #a03648;
+}

@@ -1,0 +1,28 @@
+/* Backseat's own surface steps — the chrome tints between --color-bg and the
+   Nocturne ramps, registered as named tokens per the design handoff. */
+:root {
+  --surface-page: #0e0f18;         /* page behind the window */
+  --surface-rail: #14161f;         /* file tree, review panel */
+  --surface-band: #171925;         /* pane-header band, action footer */
+  --surface-header: #191b28;       /* diff file header */
+  --surface-item: #1a1c26;         /* queued items */
+  --surface-hunk: #1a1c29;         /* hunk header */
+  --surface-input: #1b1d27;        /* input fields */
+  --surface-row-hover: #1b1d29;    /* diff row hover */
+  --surface-titlebar: #1b1d2b;
+  --surface-label: #1e202c;        /* filter field, label bars, hover chips */
+  --surface-thread-row: #15171f;   /* inline-thread backdrop row */
+  --surface-thread-header: #272a38;
+  --surface-traffic: #57596b;
+  --surface-empty-half: #16182390;
+
+  --diff-add-fill: rgba(76, 150, 105, 0.16);
+  --diff-add-edge: #4f9d6c;
+  --diff-add-number: #6fbf8b;
+  --diff-add-text: #e7f2ea;
+  --diff-del-fill: rgba(150, 76, 88, 0.16);
+  --diff-del-edge: #9d4f5c;
+  --diff-del-number: #c9757f;
+
+  --font-mono: ui-monospace, 'SF Mono', Menlo, monospace;
+}

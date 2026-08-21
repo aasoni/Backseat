@@ -1,0 +1,102 @@
+/* Syntax token palette — muted, low-chroma per Nocturne, tuned so the
+   added/removed row tints keep reading through. Tokens set color only,
+   never backgrounds. */
+
+:root {
+  --syn-keyword: #bd93f9;
+  --syn-literal: #ff79c6;
+  --syn-string: #7ee787;
+  --syn-number: #ffb86c;
+  --syn-comment: #8b93b5;
+  --syn-type: #6fd3fb;
+  --syn-function: #7aa2f7;
+  --syn-attr: #d9def2;
+  --syn-meta: #9aa3c2;
+}
+
+[data-theme='light'] {
+  --syn-keyword: #6d28d9;
+  --syn-literal: #b8228f;
+  --syn-string: #1a7f37;
+  --syn-number: #b45309;
+  --syn-comment: #6e7791;
+  --syn-type: #0369a1;
+  --syn-function: #2456c4;
+  --syn-attr: #333a52;
+  --syn-meta: #57607e;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-operator {
+  color: var(--syn-keyword);
+}
+
+.hljs-literal,
+.hljs-built_in,
+.hljs-symbol,
+.hljs-variable.language_ {
+  color: var(--syn-literal);
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-char.escape_,
+.hljs-addition {
+  color: var(--syn-string);
+}
+
+.hljs-number {
+  color: var(--syn-number);
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion {
+  color: var(--syn-comment);
+  font-style: italic;
+}
+
+.hljs-doctag {
+  color: var(--syn-comment);
+}
+
+.hljs-type,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-selector-class,
+.hljs-selector-id {
+  color: var(--syn-type);
+}
+
+.hljs-title,
+.hljs-title.function_ {
+  color: var(--syn-function);
+}
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-property,
+.hljs-params,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-name {
+  color: var(--syn-attr);
+}
+
+.hljs-meta,
+.hljs-section,
+.hljs-bullet,
+.hljs-subst,
+.hljs-punctuation,
+.hljs-tag {
+  color: var(--syn-meta);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 600;
+}

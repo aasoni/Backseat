@@ -1,12 +1,10 @@
 <h1>
 <p align="center">
+  <img width="280" alt="backseat-logo" src="https://github.com/user-attachments/assets/3df29996-0ad6-4d3a-b4c3-2eb6f4aacd79" />	
   <br>Backseat
 </h1>
   <p align="center">
-	A Desktop Application to review AI-generated code locally like a pull request. Give inline or highlevel feedback your agent can act on.
-    <br />
-	Refine the slop before final human review and stop wasting everyone's time.
-    <br />
+    A Desktop Application to review AI-generated code locally like a pull request. Give inline or highlevel feedback your agent can act on.
 </p>
 
 ## About
@@ -47,8 +45,7 @@ cd src-tauri && cargo test   # backend + protocol tests (uses dev/fake-agent.py)
 ```
 
 The `.backseat` on-disk protocol, the agent skill contract, and the module
-layout are documented in `CLAUDE.md`. The UI design spec lives in
-`backseat design files/`.
+layout are documented in `CLAUDE.md`.
 
 ## Support
 Currently works with Claude Code only.

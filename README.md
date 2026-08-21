@@ -6,7 +6,7 @@
   <p align="center">
     A Desktop Application to review AI-generated code locally like a pull request.
     <br />
-    Give inline or highlevel feedback your agent can act on.
+    Refine the slop with inline or high level feedback.
 </p>
 
 ## About
